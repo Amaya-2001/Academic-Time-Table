@@ -1,5 +1,9 @@
 import Image from 'next/image'
 //import { IoMdNotifications } from 'react-icons/io';
+import subject1 from '/assets/1644826783284-3. Data Structures.png';
+import { FaRegTrashAlt } from "react-icons/fa";
+import { FiEdit } from "react-icons/fi";
+
 
 
 export default function Home() {
@@ -79,6 +83,61 @@ export default function Home() {
      
     </tbody>
   </table>
+</div>
+<div className="card w-96 bg-base-100 shadow-xl ml-10 mb-10 mt-10">
+  <figure className="px-10 pt-10">
+    <Image src={subject1} alt="sub" className="rounded-xl" />
+  </figure>
+  <div className="card-body items-center text-center">
+    <h2 className="card-title">EEX4465 - Data Structure and  Algorithms</h2>
+   <div className="overflow-x-auto">
+  <table className="table">
+    {/* head */}
+    <thead>
+      <tr>
+        <th></th>
+        <th>Time</th>
+        <th>Date</th>
+        <th>Topic</th>
+        <th></th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      {/* row 1 */}
+      <tr>
+        <th>1</th>
+        <td>9.00 am</td>
+        <td>Saturday, 10th of July</td>
+         <td>Day School 01</td>
+         <td className="flex gap-5"><span><FaRegTrashAlt color="red" size={15} /></span> <span> <FiEdit color="blue" size={15} /></span></td>
+       
+      </tr>
+      {/* row 2 */}
+      <tr>
+        <th>2</th>
+        <td>1.30 pm</td>
+        <td>Saturday, 10th of July</td>
+        <td>Assignment 01 Due</td>
+        <td className="flex gap-5"><span><FaRegTrashAlt color="red" size={15} /></span> <span> <FiEdit color="blue" size={15} /></span></td>
+        
+      </tr>
+      {/* row 3 */}
+      <tr>
+        <th>3</th>
+        <td>2.30 pm</td>
+        <td>Sunday, 11th of July</td>
+        <td>Quiz 01 close</td>
+        <td className="flex gap-5"><span><FaRegTrashAlt color="red" size={15} /></span> <span> <FiEdit color="blue" size={15} /></span></td>
+       
+      </tr>
+    </tbody>
+  </table>
+</div>
+    <div className="card-actions">
+      <button className="btn btn-primary">Join</button>
+    </div>
+  </div>
 </div>
    
     </main>
